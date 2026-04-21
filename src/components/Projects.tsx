@@ -3,26 +3,13 @@ import { ExternalLink, Code2, Zap } from "lucide-react";
 
 const PROJECTS = [
   {
-    title: "Hyperion Engine",
-    category: "Rust / networking",
-    image: "https://picsum.photos/seed/hyperion/800/600",
-    description: "Custom Rust-based networking layer for high-throughput synchronization and low-latency data streaming.",
-    tags: ["Rust", "QUIC", "WASM"]
+    title: "Autonomous Enterprise Analyst",
+    category: "AI / Multi-Agent Systems",
+    image: "https://picsum.photos/seed/n8n/800/600", // Remember to swap this out for your actual screenshot later!
+    description: "Engineered a self-correcting multi-agent workflow using n8n. Implemented a ReAct loop with adversarial Critic and Analyst nodes to synthesize verified intelligence while strictly mitigating hallucinations.",
+    tags: ["n8n", "Gemini Pro", "ReAct Protocol"]
   },
-  {
-    title: "Vortex Interface",
-    category: "TypeScript / UI",
-    image: "https://picsum.photos/seed/vortex/800/600",
-    description: "A spatial computing interface for the browser, leveraging WebGL for high-precision data visualization.",
-    tags: ["WebGL", "GLSL", "React"]
-  },
-  {
-    title: "Aura Protocol",
-    category: "Blockchain / Security",
-    image: "https://picsum.photos/seed/aura/800/600",
-    description: "Decentralized identity protocol ensuring privacy-preserving verification through zero-knowledge proofs.",
-    tags: ["Solidity", "ZK-Proofs", "Go"]
-  }
+ 
 ];
 
 export default function Projects() {
