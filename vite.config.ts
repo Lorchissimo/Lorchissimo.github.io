@@ -6,9 +6,8 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    // If you are deploying to username.github.io/repo-name/, 
-    // set base to '/repo-name/'
-    base: '/Lorchissimo.github.io/',
+    // This is a user GitHub Pages site (username.github.io), so it serves from root.
+    base: '/',
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
