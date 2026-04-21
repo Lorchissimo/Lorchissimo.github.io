@@ -18,6 +18,7 @@ export default function App() {
         <Hero />
         <Projects />
         <Skills />
+        <AgentRoulette />
       </main>
       <Footer />
     </div>
