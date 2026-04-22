@@ -1,28 +1,23 @@
 import { motion } from "motion/react";
-import { ExternalLink, Code2, Zap } from "lucide-react";
+import { Link, Code2, Zap } from "lucide-react";
 
 const PROJECTS = [
   {
-    title: "Hyperion Engine",
-    category: "Rust / networking",
-    image: "https://picsum.photos/seed/hyperion/800/600",
-    description: "Custom Rust-based networking layer for high-throughput synchronization and low-latency data streaming.",
-    tags: ["Rust", "QUIC", "WASM"]
+    title: "Autonomous Enterprise Analyst",
+    category: "AI / Multi-Agent Systems",
+    image: "https://picsum.photos/seed/n8n/800/600", // Remember to swap this out for your actual screenshot later!
+    description: "Engineered a self-correcting multi-agent workflow using n8n. Implemented a ReAct loop with adversarial Critic and Analyst nodes to synthesize verified intelligence while strictly mitigating hallucinations.",
+    tags: ["n8n", "Gemini Pro", "ReAct Protocol"],
+    link: null,
   },
   {
-    title: "Vortex Interface",
-    category: "TypeScript / UI",
-    image: "https://picsum.photos/seed/vortex/800/600",
-    description: "A spatial computing interface for the browser, leveraging WebGL for high-precision data visualization.",
-    tags: ["WebGL", "GLSL", "React"]
+    title: "Agent Roulette",
+    category: "AI / Prompt Engineering",
+    image: "https://picsum.photos/seed/agent-roulette/800/600",
+    description: "A live combinatorial prompt generator that assembles highly specialized AI system prompts on demand. Combines randomized role, toolchain, environment, and constraint variables to produce unique expert personas.",
+    tags: ["React", "TypeScript", "Prompt Engineering"],
+    link: "#agent-roulette",
   },
-  {
-    title: "Aura Protocol",
-    category: "Blockchain / Security",
-    image: "https://picsum.photos/seed/aura/800/600",
-    description: "Decentralized identity protocol ensuring privacy-preserving verification through zero-knowledge proofs.",
-    tags: ["Solidity", "ZK-Proofs", "Go"]
-  }
 ];
 
 export default function Projects() {
@@ -68,12 +63,23 @@ export default function Projects() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-800/50">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="px-3 py-1 bg-slate-900 rounded-lg text-[9px] text-slate-400 font-black uppercase border border-slate-800 tracking-widest">
-                    {tag}
-                  </span>
-                ))}
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-800/50 items-center justify-between">
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span key={tag} className="px-3 py-1 bg-slate-900 rounded-lg text-[9px] text-slate-400 font-black uppercase border border-slate-800 tracking-widest">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    className="flex items-center gap-1.5 text-[10px] font-mono font-bold uppercase tracking-widest text-indigo-400 hover:text-indigo-300 transition-colors"
+                  >
+                    <Link className="w-3 h-3" />
+                    Try it live
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

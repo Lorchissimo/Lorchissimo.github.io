@@ -6,6 +6,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import AgentRoulette from "./components/AgentRoulette";
 import Skills from "./components/Skills";
 import PromptArchitect from "./components/PromptArchitect";
 import Footer from "./components/Footer";
@@ -19,6 +20,7 @@ export default function App() {
         <Projects />
         <PromptArchitect />
         <Skills />
+        <AgentRoulette />
       </main>
       <Footer />
     </div>

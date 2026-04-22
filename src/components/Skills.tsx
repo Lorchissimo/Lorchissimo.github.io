@@ -1,29 +1,29 @@
 import { motion } from "motion/react";
-import { Cpu, Globe, Database, Shield } from "lucide-react";
+import { BrainCircuit, Workflow, Code2, Terminal } from "lucide-react";
 
 const SKILLS = [
   {
-    icon: <Cpu className="w-6 h-6" />,
-    title: "Backend Core",
-    items: ["Rust", "Go", "C++", "Distributed Systems"],
-    featured: false
-  },
-  {
-    icon: <Globe className="w-6 h-6" />,
-    title: "Modern Stack",
-    items: ["TypeScript", "Next.js", "React", "Node.js"],
+    icon: <Workflow className="w-6 h-6" />,
+    title: "Agentic Workflows",
+    items: ["n8n Automation", "Multi-Agent Systems", "API Integrations", "Vertex AI"],
     featured: true
   },
   {
-    icon: <Database className="w-6 h-6" />,
-    title: "Infrastructure",
-    items: ["Kubernetes", "AWS", "PostgreSQL", "Docker"],
+    icon: <BrainCircuit className="w-6 h-6" />,
+    title: "AI Engineering",
+    items: ["Gemini Pro", "Prompt Architecture", "ReAct Protocol", "Structured JSON"],
     featured: false
   },
   {
-    icon: <Shield className="w-6 h-6" />,
-    title: "Security",
-    items: ["Cryptography", "ZK-Proofs", "OAuth", "Compliance"],
+    icon: <Code2 className="w-6 h-6" />,
+    title: "Modern Web",
+    items: ["React", "Tailwind CSS", "Framer Motion", "GitHub Pages"],
+    featured: false
+  },
+  {
+    icon: <Terminal className="w-6 h-6" />,
+    title: "Systems & Security",
+    items: ["Python Auditing", "Git Control", "OpenSSL", "Heuristic Logic"],
     featured: false
   }
 ];
@@ -59,7 +59,8 @@ export default function Skills() {
               )}
               
               <div>
-                <span className={`text-[10px] uppercase font-bold tracking-widest mb-10 block ${skill.featured ? "text-indigo-200" : "text-slate-600"}`}>
+                <span className={`text-[10px] uppercase font-bold tracking-widest mb-10 block flex items-center gap-3 ${skill.featured ? "text-indigo-200" : "text-slate-600"}`}>
+                  {skill.icon}
                   {skill.title}
                 </span>
                 <div className="space-y-4">
