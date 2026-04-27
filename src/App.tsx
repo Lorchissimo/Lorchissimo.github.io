@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import AgentRoulette from "./components/AgentRoulette";
 import Skills from "./components/Skills";
+import PromptArchitect from "./components/PromptArchitect";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
       <main>
         <Hero />
         <Projects />
+        <PromptArchitect />
         <Skills />
         <AgentRoulette />
       </main>
