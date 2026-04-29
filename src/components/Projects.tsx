@@ -76,4 +76,33 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 <p className={`text-sm leading-relaxed mb-8 ${project.flagship ? "text-indigo-100/70" : "text-slate-500"}`}>
+                  {project.description}
+                </p>
+              </div>
+
+              <div>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full ${project.flagship ? "bg-white/10 text-indigo-100" : "bg-slate-800 text-slate-400"}`}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    className={`inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest ${project.flagship ? "text-white" : "text-indigo-400 hover:text-indigo-300"}`}
+                  >
+                    {project.link.startsWith("http") ? <Link className="w-3 h-3" /> : <Code2 className="w-3 h-3" />}
+                    View Project
+                  </a>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
                  

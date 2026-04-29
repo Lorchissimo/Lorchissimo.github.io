@@ -76,4 +76,25 @@ export default function Hero() {
                 <div className="text-5xl font-black text-white/10 select-none">AURA</div>
                 <div className="text-xs font-mono text-indigo-400/50 uppercase tracking-[0.5em] mt-4">Local-First AI Shell</div>
                 <div className="mt-6 space-y-2 text-left">
+                  <div className="flex items-center gap-2 text-[10px] font-mono text-slate-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Multi-Agent Routing
+                  </div>
+                  <div className="flex items-center gap-2 text-[10px] font-mono text-slate-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                    7-Provider Fallback
+                  </div>
+                  <div className="flex items-center gap-2 text-[10px] font-mono text-slate-400">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                    Local-First Memory
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
    
