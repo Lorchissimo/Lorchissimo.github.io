@@ -17,7 +17,7 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">
-              Status: Shipping Code
+              Status: Building in the Open
             </span>
           </motion.div>
 
@@ -28,7 +28,7 @@ export default function Hero() {
             className="text-6xl md:text-8xl font-bold tracking-tighter text-white leading-[0.9] mb-8"
           >
             Building <br />
-            <span className="text-gradient">Performant</span> Systems.
+            <span className="text-gradient">Autonomous</span> Systems.
           </motion.h1>
 
           <motion.p
@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.4 }}
             className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mb-10"
           >
-            Software engineer focused on scalable architectures, low-latency APIs, and human-centric design interfaces.
+            Solo builder obsessed with multi-agent AI, local-first architecture, and giving machines real memory. Currently deep in Aura — a self-hosted AI shell built for humans who think differently.
           </motion.p>
 
           <motion.div
@@ -47,13 +47,18 @@ export default function Hero() {
             className="flex gap-12 items-center pt-4"
           >
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-white tracking-tight">120+</span>
-              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Commits / Mo</span>
+              <span className="text-3xl font-bold text-white tracking-tight">7</span>
+              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">AI Providers</span>
             </div>
             <div className="h-10 w-[1px] bg-slate-800"></div>
             <div className="flex flex-col">
-              <span className="text-3xl font-bold text-white tracking-tight">14</span>
-              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Active Nodes</span>
+              <span className="text-3xl font-bold text-white tracking-tight">3</span>
+              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Active Agents</span>
+            </div>
+            <div className="h-10 w-[1px] bg-slate-800"></div>
+            <div className="flex flex-col">
+              <span className="text-3xl font-bold text-white tracking-tight">∞</span>
+              <span className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Local Memory</span>
             </div>
           </motion.div>
         </div>
@@ -67,22 +72,8 @@ export default function Hero() {
           >
             <div className="absolute inset-0 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"></div>
             <div className="relative h-full w-full glass rounded-3xl border border-white/10 flex items-center justify-center shadow-2xl">
-              <div className="text-center">
-                <div className="text-5xl font-black text-white/10 select-none">CODE</div>
-                <div className="text-xs font-mono text-indigo-400/50 uppercase tracking-[0.5em] mt-4">Development Environment</div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-
-      <div className="absolute bottom-10 left-10 hidden md:block">
-        <div className="flex items-center gap-4 text-[10px] font-bold text-slate-600 tracking-widest uppercase">
-          <span>0x7F42A / London</span>
-          <div className="w-8 h-[1px] bg-slate-800"></div>
-          <span>Built for High Precision</span>
-        </div>
-      </div>
-    </section>
-  );
-}
+              <div className="text-center px-8">
+                <div className="text-5xl font-black text-white/10 select-none">AURA</div>
+                <div className="text-xs font-mono text-indigo-400/50 uppercase tracking-[0.5em] mt-4">Local-First AI Shell</div>
+                <div className="mt-6 space-y-2 text-left">
+   
